@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans TC' rel='stylesheet'>
+    <title>LONEL</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+</head>
+
+
+
+<body>
+    <!--導覽列-->
+    <div class="outerWrap" >
+        <header class="navtop" id="myTopnav">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="file:///E:/0.%E5%89%8D%E7%AB%AF%E7%8F%AD%E8%B3%87%E8%A8%8A/0.%E6%A8%82%E4%B9%83%E8%BE%B2%E5%A0%B4/lonel.html">
+                        <img class="logoImg" src="../LONEL_NEW/image/LOGO.png" alt="樂乃農場">
+                    </a>
+                </div>
+                <div class="rightBox">
+                    <div class="left">
+                        <nav class="menuBox"> 
+                            <ul class="menu">
+                                <li class="dropDown">
+                                    <span itemprop="name">
+                                        <a itemprop="url" href="file:///E:/0.%E5%89%8D%E7%AB%AF%E7%8F%AD%E8%B3%87%E8%A8%8A/0.%E6%A8%82%E4%B9%83%E8%BE%B2%E5%A0%B4/lonel.html">
+                                            樂乃農場
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="dropDown">
+                                    <span itemprop="name">
+                                        <a itemprop="url" href="file:///E:/0.%E5%89%8D%E7%AB%AF%E7%8F%AD%E8%B3%87%E8%A8%8A/0.%E6%A8%82%E4%B9%83%E8%BE%B2%E5%A0%B4/about.html">
+                                            民生食品
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="dropDown">
+                                    <span itemprop="name">
+                                        <a itemprop="url" href="file:///E:/0.%E5%89%8D%E7%AB%AF%E7%8F%AD%E8%B3%87%E8%A8%8A/0.%E6%A8%82%E4%B9%83%E8%BE%B2%E5%A0%B4/product.html">
+                                            產品介紹
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="dropDown">
+                                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </header>    
+    </div>
+
+
+<!--輪播BANNER-->
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="ml3" >LONEL</div>
+      <img src="../LONEL_NEW/image/HOME_BANNER_01.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="../LONEL_NEW/image/HOME_BANNER_03.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="../LONEL_NEW/image/HOME_BANNER_05.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+
+<!--中間文字-->
+
+<div class="indexSlogan">
+    <h1 class="title">自然、隨和、愛的生活</h1>
+    <h5 class="content">用心農產品．樂乃農場<br>
+        以友善大地的精神進行友善耕作，遵循大自然的法則
+    </h5>
+</div>
+
+<!--中間banner
+
+<div class="featuresArea">
+    <img src="../LONEL_NEW/image/HOME_BANNER_08.jpg">
+</div>-->
+
+<!--區塊-->
+
+<div class="aboutWrap">
+    <section class="m-width wow fadeIn" id="featurewheat" >
+        <div class="pic is-show">
+            <img src="../LONEL_NEW/image/HOME_ECO_01.jpg">
+        </div>
+        <div class="container">
+            <div class="titletext">
+                <img class="eco" src="../LONEL_NEW/image/HOME_text_03.png" >
+            </div>
+            <div class="content">
+                致力於打造一個永續農場，透過環保農業方法和資源節約，共同維護地球的生態平衡。
+            </div>
+            <div class="note">
+                <h2 class="notetext">永續生態</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-width2 wow fadeIn" id="featurewheat2" >
+        <div class="pic2 is-show">
+            <img src="../LONEL_NEW/image/HOME_ECO_02.jpg">
+        </div>
+        <div class="container2">
+            <div class="titletext2">
+                <img class="eco2" src="../LONEL_NEW/image/HOME_text_04.png" >
+            </div>
+            <div class="content2">
+                支持友善台灣農民，培育農業愛心，共同守護土地的美好和永續發展。
+            </div>
+            <div class="note2">
+                <h2 class="notetext2">支持台灣農民</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-width wow fadeIn" id="featurewheat" >
+        <div class="pic is-show">
+            <img src="../LONEL_NEW/image/HOME_ECO_03.jpg">
+        </div>
+        <div class="container">
+            <div class="titletext">
+                <img class="eco" src="../LONEL_NEW/image/HOME_text_05.png" >
+            </div>
+            <div class="content">
+                食在安心，追求品質，用心栽種，將健康帶進每一道美味。
+            </div>
+            <div class="note">
+                <h2 class="notetext">品質由樂乃把關</h2>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!--卡片-->
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Card 3</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+
+  <div class="footer">
+    <div class="grid-example">
+        <div class="container-fluid">
+          <div class="footerrow">
+            <div class="col-3">
+                <div class="logoImgFooter">
+                    <img src="../LONEL_NEW/image/LOGO_whit.png" width="150px">
+                </div>
+            </div>
+            <div class="col-3">
+              <p>
+                民生食品工業股份有限公司
+                Min Sheng Foods Industry Inc.
+            </p>
+            </div>
+            <div class="col-3">
+              <p>
+                統一編號 : 60456518
+                彰化縣北斗鎮中山路二段519巷20號
+            </p>
+            </div>
+            <div class="col-3">
+                <p>
+                  Tel  : 04-8870991
+                  Fax : 04-8887505
+                  Copyright © 樂乃農場 2023
+              </p>
+            </div>
+            <div class="col-3">
+              <div class="logoImgFooter">
+                  <a href="https://www.facebook.com/profile.php?id=100063876762363">
+                  <img src="../LONEL_NEW/image/facebook.png" width="50px" >
+                  </a>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="logoImgFooter">
+                  <a href="https://www.instagram.com/lonelmango/">
+                  <img src="../LONEL_NEW/image/instagram.png" width="50px">
+                  </a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+<script>
+
+//輪播圖片
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+
+
+
+
+//BANNER跳動文字
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+//導覽列
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navtop") {
+    x.className += " responsive";
+  } else {
+    x.className = "navtop";
+  }
+}
+</script>
+
+</body>
+</html>
