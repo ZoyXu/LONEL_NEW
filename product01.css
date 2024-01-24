@@ -1,0 +1,498 @@
+url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+}
+
+
+body {
+    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*導覽列*/
+
+
+.navtop a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navtop .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navtop a:not(:first-child) {display: none;}
+  .navtop a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navtop.responsive {position: relative;}
+  .navtop.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navtop.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+header.navtop {
+    background-image: url(../0.樂乃農場/image/bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    width:100% ;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.outerWrap {
+    position: relative;
+    overflow: hidden;
+}
+
+header .wrap {
+    padding: 0 50px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 120px;
+
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.logoImg {
+    width: 130px;
+}
+
+.rightBox {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(100% -200px);
+    padding: 0 100px 0 100px;
+}
+
+.left {
+    width: calc();
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center ;
+    justify-content: flex-end;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    position: relative;
+    display:inline-block ;
+}
+
+.menu li a {
+    padding: 45px 10px;
+    color: #222;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 26px;
+    position: relative;
+    font-family: Noto Sans TC;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:#135B2E;
+}
+
+
+  /*中間文字*/
+  .indexSlogan {
+    margin: 35px auto;
+    padding: 0 25px;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .title {
+    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #135B2E;
+    display: inline-block;
+    opacity: 0; /* 初始时设置透明度为 0 */
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  .content {
+    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #333;
+  }
+
+
+/********************************** 商品輪播容器樣式 *********************************/
+.slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 主要輪播區塊樣式 */
+.main-slide {
+  text-align: center;
+  position: relative;
+}
+
+.main-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 縮略圖區塊樣式 */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  max-width: 100px;
+  height: auto;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail.active {
+  opacity: 1;
+}
+
+
+/*******************************CAKEBODY ****************************/
+
+
+.ejvTMu {
+max-width:var(--content-max-width);
+width:100%;
+justify-content: space-between;
+/* display: flex; */
+}
+
+.ant-row {
+  display: flex;
+}
+
+.slider {
+  width: 500px;
+
+}
+
+.active {
+  border-radius: 7px;
+}
+
+.thumbnail {
+  border-radius: 7px;
+}
+
+
+
+/******************************右邊切版******************************/
+
+h1 {
+  font-size: 34px;
+  color: #333;
+  letter-spacing: 0px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  font-family : "STXihei", "微軟正黑體", "黑體", sans-serif;
+  letter-spacing:6px;
+}
+
+.hint {
+  font-size: 14px;
+  color: rgb(89,97,87);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ProductConfigPanel__Wrapper-sc-1folwl6-0 p {
+  font-size: 20px;
+  color: #333;
+  letter-spacing: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(229,229,234);
+  border-bottom: 1px solid rgb(229,229, 234);
+  white-space: pre-wrap;
+  font-family : "Noto Serif TC"
+}
+
+.tab-content p {
+  font-size: 20px;
+  color: rgb(89,97,87);
+  letter-spacing: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(229,229,234);
+  border-bottom: 1px solid rgb(229,229, 234);
+  white-space: pre-wrap;
+  font-family : "STXihei", "微軟正黑體", "黑體", sans-serif;
+}
+
+/******************************右邊切版/訂購金額******************************/
+
+.grid-form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 8fr; /* 設定欄位的比例 */
+  align-items: center;
+  justify-items: start;
+  font-family: "Noto Serif TC",Noto Sans TC,sans-serif;
+}
+
+label {
+  text-align: right;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;s
+}
+
+input[type="number"], input[type="text"] {
+  /* 可根據需求調整外觀 */
+}
+
+input[type="datetime-local"] ::-webkit-datetime-edit-text {
+  color: #BB0009;
+}
+
+.money {
+  padding: 15px 0px;
+  font-size: 20pt;
+  font-family : "Noto Serif TC";
+}
+
+/* 移除金額總計的框線並設置背景為透明 */
+  input[type="text"]#total {
+  border: none; /* 移除所有框線 */
+  background: transparent; /* 設置背景為透明 */
+  font-size: 28px;
+  color: #BB0009;
+  /* 如果需要增加一些視覺效果，你可以添加其他樣式，例如下面這樣 */
+  /* box-shadow: none; */
+  /* outline: none; */
+}
+
+
+/******************************立即購買/加入購物車按鈕******************************/
+
+.btnbutton,
+.btnbutton:focus {
+    position: relative;
+    min-width: 200px;
+    background-color: #BB0009;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    border: none;
+}
+.btnbutton:hover {
+    background-color: #d32d35;
+    color: white;
+    transition-duration: 0.1s;
+}
+.btnbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-radius: 4em;
+}
+.btnbutton:active:after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+}
+.btnbutton:active {
+    top: 1px;
+}
+
+.ctnbutton,
+.ctnbutton:focus {
+    position: relative;
+    min-width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(124, 124, 124);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    border: none;
+}
+.ctnbutton:hover {
+    background-color:  rgb(187, 187, 187);
+    color: white;
+    transition-duration: 0.1s;
+}
+.ctnbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-radius: 4em;
+}
+.ctnbutton:active:after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+}
+.ctnbutton:active {
+    top: 1px;
+}
+
+
+/***************************下方資訊*********************/
+
+  /* 列表群組的樣式 */
+  .list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px; /* 按鈕之間的間距 */
+}
+
+/* 列表項目的樣式 */
+.list-item {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.list-item:hover {
+  background-color: #135B2E;
+  color: #f0f0f0;
+}
+
+/* 選項內容的樣式 */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+
+  width: 100%;
+  background-color: #135B2E;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-3 {
+  padding: 30px;
+  white-space: pre-line;
+  text-align: left;
+  font-family: 'Noto Sans TC';
+}
+
