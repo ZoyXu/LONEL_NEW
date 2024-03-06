@@ -274,6 +274,52 @@ li ul li a:hover {
   opacity: 1;
 }
 
+/*小於990*/
+@media (max-width: 990px){
+  .slider {
+    max-width: 310px;
+    padding: 20px 20px 20px 20px;
+  }
+  .ant-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .ant02 {
+    padding: 20px;
+  }
+
+  .ProductInfoTabs {
+    margin: 30px;
+  }
+
+  /* 選項內容的樣式 */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+}
+
+/*電腦*/
+@media screen and (min-width: 991px){
+  .ProductInfoTabs {
+    margin-bottom: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  /* 選項內容的樣式 */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+  
+}
+
 
 /*******************************CAKEBODY ****************************/
 
@@ -287,6 +333,8 @@ justify-content: space-between;
 
 .ant-row {
   display: flex;
+  margin-top:140px;
+  margin-bottom: 40px;
 }
 
 .slider {
@@ -315,6 +363,7 @@ h1 {
   align-items: center;
   font-family : "STXihei", "微軟正黑體", "黑體", sans-serif;
   letter-spacing:6px;
+  padding-left: 25px;
 }
 
 .hint {
@@ -322,6 +371,11 @@ h1 {
   color: rgb(89,97,87);
   display: block;
   margin-bottom: 20px;
+
+}
+
+.ant02 {
+  padding: 18px;
 }
 
 .ProductConfigPanel__Wrapper-sc-1folwl6-0 p {
@@ -332,8 +386,10 @@ h1 {
   padding-bottom: 30px;
   border-top: 1px solid rgb(229,229,234);
   border-bottom: 1px solid rgb(229,229, 234);
-  white-space: pre-wrap;
-  font-family : "Noto Serif TC"
+  white-space: pre-line;
+  text-align:left;
+  font-family : "Noto Serif TC";
+  padding-left: 20px;
 }
 
 .tab-content p {
@@ -344,145 +400,11 @@ h1 {
   padding-bottom: 30px;
   border-top: 1px solid rgb(229,229,234);
   border-bottom: 1px solid rgb(229,229, 234);
-  white-space: pre-wrap;
+  white-space: pre-line;
   font-family : "STXihei", "微軟正黑體", "黑體", sans-serif;
 }
 
-/******************************右邊切版/訂購金額******************************/
 
-.grid-form {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 8fr; /* 設定欄位的比例 */
-  align-items: center;
-  justify-items: start;
-  font-family: "Noto Serif TC",Noto Sans TC,sans-serif;
-}
-
-label {
-  text-align: right;
-}
-
-input, select {
-  width: 100%;
-  padding: 5px;
-  font-size: 16px;
-  border-radius: 5px;s
-}
-
-input[type="number"], input[type="text"] {
-  /* 可根據需求調整外觀 */
-}
-
-input[type="datetime-local"] ::-webkit-datetime-edit-text {
-  color: #BB0009;
-}
-
-.money {
-  padding: 15px 0px;
-  font-size: 20pt;
-  font-family : "Noto Serif TC";
-}
-
-/* 移除金額總計的框線並設置背景為透明 */
-  input[type="text"]#total {
-  border: none; /* 移除所有框線 */
-  background: transparent; /* 設置背景為透明 */
-  font-size: 28px;
-  color: #BB0009;
-  /* 如果需要增加一些視覺效果，你可以添加其他樣式，例如下面這樣 */
-  /* box-shadow: none; */
-  /* outline: none; */
-}
-
-
-/******************************立即購買/加入購物車按鈕******************************/
-
-.btnbutton,
-.btnbutton:focus {
-    position: relative;
-    min-width: 200px;
-    background-color: #BB0009;
-    border-radius: 10px;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition-duration: 0.4s;
-    padding: 10px 20px;
-    border: none;
-}
-.btnbutton:hover {
-    background-color: #d32d35;
-    color: white;
-    transition-duration: 0.1s;
-}
-.btnbutton:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    box-shadow: 0 0 10px 40px white;
-    border-radius: 4em;
-}
-.btnbutton:active:after {
-    opacity: 1;
-    transition: 0s;
-    box-shadow: 0 0 0 0 white;
-}
-.btnbutton:active {
-    top: 1px;
-}
-
-.ctnbutton,
-.ctnbutton:focus {
-    position: relative;
-    min-width: 200px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    color: rgb(124, 124, 124);
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition-duration: 0.4s;
-    padding: 10px 20px;
-    border: none;
-}
-.ctnbutton:hover {
-    background-color:  rgb(187, 187, 187);
-    color: white;
-    transition-duration: 0.1s;
-}
-.ctnbutton:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    box-shadow: 0 0 10px 40px white;
-    border-radius: 4em;
-}
-.ctnbutton:active:after {
-    opacity: 1;
-    transition: 0s;
-    box-shadow: 0 0 0 0 white;
-}
-.ctnbutton:active {
-    top: 1px;
-}
 
 
 /***************************下方資訊*********************/
@@ -510,38 +432,466 @@ input[type="datetime-local"] ::-webkit-datetime-edit-text {
   color: #f0f0f0;
 }
 
-/* 選項內容的樣式 */
-.tab-content {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+
+
+/*footer*/
+
+.footer {
+  background-color: #135B2E;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+}
+
+.footer img {
+  width: 100px; /* 調整logo的寬度 */
+  margin-bottom: 10px;
+}
+
+.footer .social-icons {
   margin-top: 10px;
 }
 
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin: 0 5px;
+}
 
-/*FOOTER*/
+.footer .social-icons a.instagram {
+  background-image: url('../LONEL_NEW/image/instagram.png'); /* Instagram圖標的路徑 */
+}
+
+.footer .social-icons a.facebook {
+  background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的路徑 */
+}
+
+
+/*footer*/
 
 .footer {
-
-  width: 100%;
   background-color: #135B2E;
-  color: white;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.footerrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer p {
+  margin: 5px 0;
+  font-size: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
 }
 
-.col-3 {
+.footer img {
+  width: 100px; /* 調整logo的寬度 */
+  margin-bottom: 10px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin: 0 5px;
+}
+
+.footer .social-icons a.instagram {
+  background-image: url('../LONEL_NEW/image/instagram.png'); /* Instagram圖標的路徑 */
+}
+
+.footer .social-icons a.facebook {
+  background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的路徑 */
+}
+
+
+
+
+
+  /**********************導覽列css****************************/
+  .popular-products-content {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  .ciNxDx {
+    display: flex;
+    flex-direction: column;
+    width: calc(33% - 35%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in 0s;
+  }
+
+  .navbar-wrapper {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* 將導覽列固定在視窗的頂部 */
+    left: 0; /* 將導覽列固定在視窗的左側 */
+    z-index: 1000; /* 確保導覽列位於其他元素之上 */
+    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .iMKRuG {
+    height: 100%;
+    max-width: 1240px;
+    margin:0px auto;
+    padding: 0px;
+    display: flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+  }
+
+  .iMKRuG > .group-actions {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .iMKRuG > .group-actions .button {
+    margin-right: 0px;
+    cursor: pointer;
+    position:relative;
+    font-family:"STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size :16px;
+  }
+
+  .groupactions {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .iMKRuG > .groupactions .button {
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+    font-family:"STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 16px;
+  }
+
+  .buttonsecondary { 
+    cursor:pointer;
+    margin-right: 30px;
+    position: relative;
+    font-family: "Noto Serif TC";
+    font-size: 24px;
+    text-decoration: none;
+    color: #020202;
+    outline:none;
+  }
+
+  a,a:focus {
+    outline:none;
+  }
+
+  .carousel {
+    position: relative;
+    top: 80px;
+  }
+
+  /********************************RWD隱藏導覽列******************/
+
+@media screen and (max-width: 930px) {
+.link-secondary {
+  display: none;
+}
+}
+
+@media screen and (max-width: 930px) {
+.left group-actions {
+  display: none;
+}
+
+.logofirst {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.menuBox {
+  display: none;
+}
+.menubutton {
+  margin-right: 30px;
+}
+}
+
+
+/**********************導覽列其他選單**********************/
+
+ /* 預設隱藏 checkbox */
+ input[type="checkbox"] {
+  display: none;
+}
+
+/* 設置 label 的樣式 */
+.toggle-label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: right; /* 將 Toggle Menu 文字設置在右側 */
+  font-size:30px;
+}
+
+/* 側邊選單的樣式 */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+  position: fixed;
+  top: 0;
+  right: -250px; /*將側邊選單設置在右側並隱藏*/
+  transition: right 0.3s ease;
+}
+
+/* 當 checkbox 被選中時展開選單 */
+input[type="checkbox"]:checked ~ .sidebar {
+  right: 0;
+}
+
+/* 關閉按鈕的樣式 */
+.close-btn {
+  display: block;
+  text-align: right;
   padding: 30px;
-  white-space: pre-line;
-  text-align: left;
-  font-family: 'Noto Sans TC';
+  cursor: pointer;
+  color: rgb(89,87,87);
+  font-size: 40px;
 }
+
+/* 選單項目的樣式 */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+  font-size: 18px;
+}
+
+.sidebar ul li {
+  padding: 20px;
+}
+
+.sidebar ul li a {
+  color: rgb(89,87,87);
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+  color: #135B2E;
+}
+
+.menubutton {
+padding-top: 14px;
+}
+
+
+
+
+
+
+
+
+.navtop a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+.navtop .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.navtop a:not(:first-child) {display: none;}
+.navtop a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.navtop.responsive {position: relative;}
+.navtop.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navtop.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+
+
+header.navtop {
+  background-image: url(../LONEL_NEW/image/bg.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto;
+  width:100% ;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: 120px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.outerWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+header .wrap {
+  padding: 0 50px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: 120px;
+
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logoImg {
+  width: 130px;
+  min-width: 100%;
+}
+
+.rightBox {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(100% -200px);
+  padding: 0 100px 0 100px;
+}
+
+.left {
+  width: calc();
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center ;
+  justify-content: flex-end;
+}
+
+ul{
+  list-style: none;
+}
+
+li {
+  position: relative;
+  display:inline-block ;
+}
+
+li a {
+  
+  color: #222;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 26px;
+  position: relative;
+  font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:#135B2E;
+}
+
+nav > ul > li > a {
+color: #333;
+text-decoration: none;
+display: block;
+padding: 10px;
+}
+
+/* banner */
+
+.aboutBanner {
+max-width: 100%;
+}
+
+
+
+
+/*下拉底*/
+nav ul ul {
+display: none;
+position: absolute;
+top: 100%;
+right: -20%;
+text-align: left;
+background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+border-radius: 0 0 5px 5px;
+padding: 20px;
+
+}
+
+.pp {
+display: block;
+font-weight: 500;
+letter-spacing: 2px;
+position: relative;
+font-size: 23px;
+padding-left: 0px;
+border-bottom:1px solid #dadada;
+padding: 15px 0px 15px 0px;
+}
+nav ul ul li {
+display: block;
+width: 130px;
+margin: 0;
+}
+
+nav ul ul li:hover {
+/*background-color:#fff;  改變下拉選單的背景顏色 */
+display: block;
+}
+
+li:hover > ul {
+display: block;
+}
+
+li ul li a:hover {
+border-bottom:2px solid #135B2E;
+}
+
+.leftlogo{
+  margin-left: 19px;
+}
+
 

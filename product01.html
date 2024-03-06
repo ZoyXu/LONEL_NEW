@@ -13,49 +13,64 @@
 
 
 <body>
-  <!--導覽列-->
-  <div class="outerWrap" >
-      <header class="navtop" id="myTopnav">
-          <div class="wrap">
-              <div class="logo">
-                  <a href="index.html">
-                      <img class="logoImg" src="../LONEL_NEW/image/LOGO.png" alt="樂乃農場">
-                  </a>
-              </div>
-              <div class="rightBox">
-                  <div class="left">
-                      <nav class="menuBox"> 
-                        <ul>
-                          <li>
-                              <a href="">樂乃農場</a>
-                          </li>
-                          <li>
-                            <a href="about.html">民生食品</a>
-                        </li>
-                          <li>
-                              <a href="product.html">產品介紹</a>
-                              <ul>
-                                <li><a class="pp" href="product.html">快速調理包</a></li>
-                                <li><a class="pp" href="product_2.html">下酒好朋友</a></li>
-                                <li><a class="pp" href="product_3.html">輕食及醬料</a></li>
-                            </ul>
-                          </li>
-                      </ul>
-                      </nav>
-                  </div>
-                  <div class="right"></div>
-              </div>
-          </div>
-      </header>    
+  <!--上方導覽列-->
+  <div class="navbar-wrapper shadow p-3 mb-5 bg-body" >
+    <div class="iMKRuG">
+      <div class="left group-actions">
+        <div class="logofirst">
+          <a href="index.html" > <img src="../LONEL_NEW/image/LOGO.png" width="100"></a>
+        </div>
+      </div>
+      <div class="groupactions" >
+        <nav class="menuBox"> 
+          <ul>
+            <li>
+                <a href="index.html">樂乃農場</a>
+            </li>
+            <li>
+              <a href="about.html">民生食品</a>
+          </li>
+            <li>
+                <a href="#">產品介紹</a>
+                <ul>
+                  <li><a class="pp" href="firstProduct.html">快速調理包</a></li>
+                  <li><a class="pp" href="firstProduct.html">下酒好朋友</a></li>
+                  <li><a class="pp" href="firstProduct.html">輕食及醬料</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      <!-- 其他選單項目 -->
+      <div class="menubutton">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggle-label">&#9776;</label>
+        <div class="sidebar">
+            <label for="toggle" class="close-btn">&times;</label>
+            <img class="leftlogo" src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo" width="100px">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">民生食品</a></li>
+                <li><a href="firstProduct.html">產品介紹</a></li>
+                <li><a href="firstProduct.html">快速調理包</a></li>
+                <li><a href="firstProduct.html">下酒好朋友</a></li>
+                <li><a href="firstProduct.html">輕食及醬料</a></li>
+                <!-- 其他選單項目 -->
+            </ul>
+        </div>
+      </div>  
+      </div>
   </div>
+  </div>
+</div>
+<!--上方導覽列END-->
 
 
 
 <!--CAKEBODY-->
 
 <div class="Product__Wrapper-sc-1xhdm7w-0 ejvTMu">
-  <div class="ant-row" style="margin:40px auto ; justify-content:center;">
-    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-12" style="padding-left: 0.5px; padding-right: 0.5px;padding-top: 150px;">
+  <div class="ant-row" style= "justify-content:center;">
+    <div class="ant">
       <div class="slider">
         <div class="main-slide">
           <img src="../LONEL_NEW/image/PRODUCT_01.jpg" alt="Product 1" class="active">
@@ -68,69 +83,29 @@
         </div>
       </div>
     </div>
-    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-1" style="padding-left: 40px; padding-right: 0.5px;">
-    </div>
-    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-11" style="padding-left: 40px; padding-right: 0.5px;padding-top: 150px;">
+    <div class="ant02">
       <div class="ProductConfigPanel__Wrapper-sc-1folwl6-0 ckggfe">
         <h1>麻辣乾鍋</h1>
-        <span class="hint">
-          
-        </span>
         <p>
-｜麻辣｜快速調理｜
+          ｜麻辣｜快速調理｜
 
-鮮香入味，辣度剛好，一口吃出滿滿的幸福與滿足！
-麻辣干鍋冷凍包，香辣冒險立即啟動！適合忙碌的都市一族，
-無論是宅在家或派對聚會，瞬間激發熱情。
-簡單操作，美味不等待，點燃味蕾的經典時刻！
-
+          鮮香入味，辣度剛好，一口吃出滿滿的幸福與滿足！
+          麻辣干鍋冷凍包，香辣冒險立即啟動！適合忙碌的都市一族，
+          無論是宅在家或派對聚會，瞬間激發熱情。
+          簡單操作，美味不等待，點燃味蕾的經典時刻！
         </p>
-        <!--
-        <div class="config container">
-          <form class="grid-form">
-            <label for="quantity">訂購數量：</label>
-            <input type="number" id="quantity" name="quantity" placeholder="請輸入數量">
-          
-            <label for="pickup">取貨方式：</label>
-            <select id="pickup" name="pickup">
-              <option value="self">自取</option>
-              <option value="delivery">宅配,宅配物流費200元</option>
-            </select>
-          
-            <label for="date">自取日期：</label>
-            <input type="datetime-local" id="date" name="date">
-            
-            <label for="summary">商品金額 : </label>
-            <div class="money"> 980元 </div>
-
-            <label for="total">金額總計：</label>
-            <input type="text" id="total" name="total" readonly>
-          </form>
-        </div>
-        <div class="actions-wrapper" style="padding-bottom: 50px;padding-top: 30px;">
-          <button class="Button__Wrapper-sc-1rpmxt-0 btnbutton defualt" type="primary" style="margin: 12px;width: calc(40% - 6px);visibility: visible;">
-          <span>立即購買</span>
-          </button>
-          <button class="Button__Wrapper-sc-1rpmxt-0 ctnbutton defualt" type="secondary" style="margin: 12px;width: calc(40% - 6px);">
-            <span>加入購物車</span>
-            </button>
-        </div>
-        <div class="ProductAdditionalPurchasePanel__Wrapper-sc-19tprzu-0 eXfHpO">
-          <div class="additional-purchase container"></div>
-        </div>-->
       </div>
     </div>
   </div>
-  <div class="ant-col">
-    <div class="ProductInfoTabs__Wrapper-sc-1prtmvp-0 buUPgh" style="margin-bottom: 100px; margin-left: 200px; margin-right: 200px;">
+  <div class="ant03">
+    <div class="ProductInfoTabs">
       <div class="list-group">
         <button class="list-item" data-tab="tab1">商品特色</button>
       </div>
-      
-      <div class="tab-content" id="tab1">
+      <div class="tab-content pre-line" id="tab1">
         <p>
         /香辣風味/
-        獨特的香辣調味，令人垂涎欲滴
+        獨特的香辣調味，令人垂涎欲。
 
         /新鮮農產/
         以新鮮的農場產品為基礎，保證食材的新鮮度。
@@ -152,57 +127,22 @@
       </div>
     </div>
   </div>
-</div>
 
 
-  <!--FOOTER-->
+    <!--FOOTER-->
 
-  <div class="footer">
-    <div class="grid-example">
-        <div class="container-fluid">
-          <div class="footerrow">
-            <div class="col-3">
-                <div class="logoImgFooter">
-                    <img src="../LONEL_NEW/image/LOGO_whit.png" width="150px">
-                </div>
-            </div>
-            <div class="col-3">
-              <p>
-                民生食品工業股份有限公司
-                Min Sheng Foods Industry Inc.
-            </p>
-            </div>
-            <div class="col-3">
-              <p>
-                統一編號 : 60456518
-                彰化縣北斗鎮中山路二段519巷20號
-            </p>
-            </div>
-            <div class="col-3">
-                <p>
-                  Tel  : 04-8870991
-                  Fax : 04-8887505
-                  Copyright © 樂乃農場 2023
-              </p>
-            </div>
-            <div class="col-3">
-                <div class="logoImgFooter">
-                    <a href="https://www.facebook.com/profile.php?id=100063876762363">
-                    <img src="../LONEL_NEW/image/facebook.png" width="50px" >
-                    </a>
-                </div>
-            </div>    
-            <div class="col-3">
-                <div class="logoImgFooter">
-                    <a href="https://www.instagram.com/lonelmango/">
-                    <img src="../LONEL_NEW/image/instagram.png" width="50px">
-                    </a>
-                </div>
-            </div>
-          </div>
-        </div>
+    <footer class="footer">
+      <img src="../LONEL_NEW/image/LOGO_whit.png" alt="公司Logo">
+      <p>民生食品工業股份有限公司 Min Sheng Foods Industry Inc.</p>
+      <p>統一編號 : 60456518 彰化縣北斗鎮中山路二段519巷20號</p>
+      <p>Tel : 04-8870991  Fax : 04-8887505  Copyright © 樂乃農場 2023</p>
+      <div class="social-icons">
+        
+        <a href="https://www.instagram.com/lonelmango/" class="instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100063876762363" class="facebook"></a>
       </div>
-  </div>
+    </footer> 
+
 
 
 

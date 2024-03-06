@@ -13,41 +13,56 @@
 
 
 <body>
-  <!--導覽列-->
-  <div class="outerWrap" >
-      <header class="navtop" id="myTopnav">
-          <div class="wrap">
-              <div class="logo">
-                  <a href="index.html">
-                      <img class="logoImg" src="../LONEL_NEW/image/LOGO.png" alt="樂乃農場">
-                  </a>
-              </div>
-              <div class="rightBox">
-                  <div class="left">
-                      <nav class="menuBox"> 
-                        <ul>
-                          <li>
-                              <a href="index.html">樂乃農場</a>
-                          </li>
-                          <li>
-                            <a href="about.html">民生食品</a>
-                        </li>
-                          <li>
-                              <a href="product.html">產品介紹</a>
-                              <ul>
-                                <li><a class="pp" href="product.html">快速調理包</a></li>
-                                <li><a class="pp" href="product_2.html">下酒好朋友</a></li>
-                                <li><a class="pp" href="product_3.html">輕食及醬料</a></li>
-                            </ul>
-                          </li>
-                      </ul>
-                      </nav>
-                  </div>
-                  <div class="right"></div>
-              </div>
-          </div>
-      </header>    
+  <!--上方導覽列-->
+  <div class="navbar-wrapper shadow p-3 mb-5 bg-body" >
+    <div class="iMKRuG">
+      <div class="left group-actions">
+        <div class="logofirst">
+          <a href="index.html" > <img src="../LONEL_NEW/image/LOGO.png" width="100"></a>
+        </div>
+      </div>
+      <div class="groupactions" >
+        <nav class="menuBox"> 
+          <ul>
+            <li>
+                <a href="index.html">樂乃農場</a>
+            </li>
+            <li>
+              <a href="about.html">民生食品</a>
+          </li>
+            <li>
+                <a href="#">產品介紹</a>
+                <ul>
+                  <li><a class="pp" href="firstProduct.html">快速調理包</a></li>
+                  <li><a class="pp" href="firstProduct.html">下酒好朋友</a></li>
+                  <li><a class="pp" href="firstProduct.html">輕食及醬料</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      <!-- 其他選單項目 -->
+      <div class="menubutton">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggle-label">&#9776;</label>
+        <div class="sidebar">
+            <label for="toggle" class="close-btn">&times;</label>
+            <img class="leftlogo" src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo" width="100px">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">民生食品</a></li>
+                <li><a href="firstProduct.html">產品介紹</a></li>
+                <li><a href="firstProduct.html">快速調理包</a></li>
+                <li><a href="firstProduct.html">下酒好朋友</a></li>
+                <li><a href="firstProduct.html">輕食及醬料</a></li>
+                <!-- 其他選單項目 -->
+            </ul>
+        </div>
+      </div>  
+      </div>
   </div>
+  </div>
+</div>
+<!--上方導覽列END-->
 
 
 <!--輪播BANNER-->
@@ -55,7 +70,7 @@
 <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="ml3" >LONEL</div>
-      <img src="../LONEL_NEW/image/ABOUT_BANNER_02.jpg" style="width:100%">
+      <img class="aboutBanner" src="../LONEL_NEW/image/ABOUT_BANNER_02.jpg">
     </div>
 </div>
 <br>
@@ -102,7 +117,7 @@
             </div>
             <div class="column two-third center">
               <br>
-              <img alt="Scenery1" src="../LONEL_NEW/image/ABOUT_picture_01.jpg" title="Scenery1">
+              <img alt="Scenery1" src="../LONEL_NEW/image/ABOUT_picture_01.jpg" title="Scenery1" style="width: 100%">
               <br>
               <br>
             </div>
@@ -155,23 +170,33 @@
                     <br>
               </p>
             </div>
-            <div class="column two-third center">
-              <br>
-              <img src="../LONEL_NEW/image/ABOUT_picture_02.jpg" class="img2" alt="Scenery1" title="Scenery1">
-              <br>
-              <br>
-              <img src="../LONEL_NEW/image/ABOUT_picture_03.jpg" class="img2" alt="Scenery1" title="Scenery1">
-              <br>
-              <br>
-              <img src="../LONEL_NEW/image/ABOUT_picture_04.jpg" class="img2" alt="Scenery1" title="Scenery1">
-              <br>
-              <br>
-              <img src="../LONEL_NEW/image/ABOUT_picture_05.jpg" class="img2" alt="Scenery1" title="Scenery1">
-              <br>
+
+            <div class="gallery">
+              <img src="../LONEL_NEW/image/ABOUT_picture_02.jpg" alt="Image 1">
+              <img src="../LONEL_NEW/image/ABOUT_picture_03.jpg" alt="Image 2">
+              <img src="../LONEL_NEW/image/ABOUT_picture_04.jpg" alt="Image 3">
+              <img src="../LONEL_NEW/image/ABOUT_picture_05.jpg" alt="Image 4">
             </div>
-            <div class="column two-third center">
+            <div class="gallery2">
+              <img src="../LONEL_NEW/image/ABOUT_picture_06.jpg" alt="Image 1">
+              <img src="../LONEL_NEW/image/ABOUT_picture_07.jpg" alt="Image 2">
+            </div>
+            <!-- <div class="column two-third">
+              <p>
+                <span style="font-size: 18px;">
+                  <strong>
+                    －安心民生 優良保證 － ​​​​​
+                  </strong>
+                </span>
+                  <br>
+                  不定期訪廠稽核,品質管控,食安有保障。產品從外銷工廠到內銷市場,供應全台各大知名鎖餐飲業。堅持產品的衛生、安全,符合政府法規。取得HACCP,保證加工系統流程的食品安全。
+                  <br>
+                  <br>
+              </p>
+            </div> -->
+            <div class="column">
               <br>
-              <img src="../LONEL_NEW/image/ABOUT_food_02.jpg" class="img3" alt="Scenery1" title="Scenery1">
+              <img src="../LONEL_NEW/image/ABOUT_food_02.jpg" class="img3" alt="Scenery1" title="Scenery1" style="max-width: 100%;">
               <br>
               <br>
             </div>
@@ -184,56 +209,19 @@
 
 
 
+  <!--FOOTER-->
 
-
-<!--FOOTER-->
-
-  <div class="footer">
-    <div class="grid-example">
-        <div class="container-fluid">
-          <div class="footerrow">
-            <div class="col-3">
-                <div class="logoImgFooter">
-                    <img src="../LONEL_NEW/image/LOGO_whit.png" width="150px">
-                </div>
-            </div>
-            <div class="col-3">
-              <p>
-                民生食品工業股份有限公司
-                Min Sheng Foods Industry Inc.
-            </p>
-            </div>
-            <div class="col-3">
-              <p>
-                統一編號 : 60456518
-                彰化縣北斗鎮中山路二段519巷20號
-            </p>
-            </div>
-            <div class="col-3">
-                <p>
-                  Tel  : 04-8870991
-                  Fax : 04-8887505
-                  Copyright © 樂乃農場 2023
-              </p>
-            </div>
-            <div class="col-3">
-              <div class="logoImgFooter">
-                  <a href="https://www.facebook.com/profile.php?id=100063876762363">
-                  <img src="../LONEL_NEW/image/facebook.png" width="50px" >
-                  </a>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="logoImgFooter">
-                  <a href="https://www.instagram.com/lonelmango/">
-                  <img src="../LONEL_NEW/image/instagram.png" width="50px">
-                  </a>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-  </div>
+  <footer class="footer">
+    <img src="../LONEL_NEW/image/LOGO_whit.png" alt="公司Logo">
+    <p>民生食品工業股份有限公司 Min Sheng Foods Industry Inc.</p>
+    <p>統一編號 : 60456518 彰化縣北斗鎮中山路二段519巷20號</p>
+    <p>Tel : 04-8870991  Fax : 04-8887505  Copyright © 樂乃農場 2023</p>
+    <div class="social-icons">
+      
+      <a href="https://www.instagram.com/lonelmango/" class="instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=100063876762363" class="facebook"></a>
+    </div>
+  </footer>
 
 
 
