@@ -90,7 +90,7 @@ body {
   .ml3 {
     font-size: 70px;
     position: absolute;
-    margin-top: -360px;
+    margin-top: -272px;
     transform: translate(-50%, -50%);
     color: #f1f1f1;
     font-family: 'Times New Roman'!important;
@@ -101,6 +101,7 @@ body {
 
 @media (max-width: 990px) {
   .banner {
+    margin-top: 90px;
     width:100%;
   }
 }
