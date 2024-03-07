@@ -490,7 +490,7 @@ background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的�
 
 .slideshow-container {
   /* max-width: 1000px;*/
-   padding-top: 120PX;
+   padding-top: 88PX;
    position: relative;
    margin: auto;
  }
@@ -500,12 +500,6 @@ background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的�
   padding-left: 58px;
 }
 
-.slideshow-container2 {
-  /* max-width: 1000px;*/
-   padding-top: 120PX;
-   position: relative;
-   margin: auto;
- }
 
  #featurewheat .container2 {
   max-width: 800px;
@@ -692,6 +686,7 @@ background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的�
 .toggle-label {
   display: block;
   cursor: pointer;
+  margin-left: 50px;
   margin-bottom: 10px;
   text-align: right; /* 將 Toggle Menu 文字設置在右側 */
   font-size:30px;
@@ -732,7 +727,7 @@ input[type="checkbox"]:checked ~ .sidebar {
 }
 
 .sidebar ul li {
-  padding: 20px;
+  padding: 14px;
 }
 
 .sidebar ul li a {
@@ -903,27 +898,28 @@ nav ul ul {
 display: none;
 position: absolute;
 top: 100%;
-right: -20%;
+right: -43px;
 text-align: left;
 background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
 border-radius: 0 0 5px 5px;
 padding: 20px;
-
 }
 
 .pp {
+white-space:nowrap;
 display: block;
 font-weight: 500;
 letter-spacing: 2px;
 position: relative;
-font-size: 23px;
+font-size: 20px;
 padding-left: 0px;
 border-bottom:1px solid #dadada;
-padding: 15px 0px 15px 0px;
+padding:0px
 }
+
 nav ul ul li {
 display: block;
-width: 130px;
+width: 170px;
 margin: 0;
 }
 
@@ -940,4 +936,23 @@ li ul li a:hover {
 border-bottom:2px solid #135B2E;
 }
 
+.menubutton ul ul {
+  display: none;
+  position: absolute;
+  }
 
+  /* 側邊產品介紹 */
+  .main-list li {
+    color:rgb(89,87,87);
+    display: block;
+    letter-spacing: 2px;
+    font-size: 26px;
+  }
+
+  .main-list li:hover {
+    color:#135B2E;
+  }
+
+  .sub .pp {
+    padding: 0px;
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nested Lists</title>
+    <style>
+        /* 根列表样式 */
+        .main-list {
+            list-style-type: none;
+        }
+
+        /* 主列表项样式 */
+        .main-list li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        /* 嵌套列表样式 */
+        .sub-list {
+            list-style-type: circle;
+            margin-left: 20px;
+            display: none; /* 默认隐藏嵌套列表 */
+        }
+
+        /* 嵌套列表项样式 */
+        .sub-list li {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- 主列表 -->
+    <ul class="main-list">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">民生食品</a></li>
+        <li>產品介紹 ▾
+            <!-- 嵌套列表 -->
+            <ul class="sub-list">
+                <li><a class="pp" href="firstProduct.html">經典西餐玉米濃湯</a></li>
+                <li><a class="pp" href="firstProduct.html">芋見獅子頭炊粉湯</a></li>
+                <li><a class="pp" href="firstProduct.html">砂鍋魚塊湯</a></li>
+                <li><a class="pp" href="firstProduct.html">櫻花蝦油飯</a></li>
+                <li><a class="pp" href="firstProduct.html">什錦炒牛肉香鍋</a></li>
+                <li><a class="pp" href="firstProduct.html">什錦炒豬肉香鍋</a></li>
+                <li><a class="pp" href="firstProduct.html">蠔油冬粉</a></li>
+                <li><a class="pp" href="firstProduct.html">冬粉香鍋</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        // 获取所有主列表项
+        const mainItems = document.querySelectorAll('.main-list li');
+
+        // 为每个主列表项添加点击事件监听器
+        mainItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // 切换子项的显示状态
+                const subList = item.querySelector('.sub-list');
+                subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

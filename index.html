@@ -33,11 +33,16 @@
               <a href="about.html">民生食品</a>
           </li>
             <li>
-                <a href="#">產品介紹</a>
+                <a href="#">產品介紹 ▾</a>
                 <ul>
-                  <li><a class="pp" href="firstProduct.html">快速調理包</a></li>
-                  <li><a class="pp" href="firstProduct.html">下酒好朋友</a></li>
-                  <li><a class="pp" href="firstProduct.html">輕食及醬料</a></li>
+                  <li><a class="pp" href="firstProduct.html">經典西餐玉米濃湯</a></li>
+                  <li><a class="pp" href="firstProduct.html">芋見獅子頭炊粉湯</a></li>
+                  <li><a class="pp" href="firstProduct.html">砂鍋魚塊湯</a></li>
+                  <li><a class="pp" href="firstProduct.html">櫻花蝦油飯</a></li>
+                  <li><a class="pp" href="firstProduct.html">什錦炒牛肉香鍋</a></li>
+                  <li><a class="pp" href="firstProduct.html">什錦炒豬肉香鍋</a></li>
+                  <li><a class="pp" href="firstProduct.html">蠔油冬粉</a></li>
+                  <li><a class="pp" href="firstProduct.html">冬粉香鍋</a></li>
               </ul>
             </li>
           </ul>
@@ -49,13 +54,23 @@
         <div class="sidebar">
             <label for="toggle" class="close-btn">&times;</label>
             <img class="logogo"src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo">
-            <ul>
+              <ul class="main-list">
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about.html">民生食品</a></li>
-                <li><a href="firstProduct.html">產品介紹</a></li>
-                <li><a href="firstProduct.html">快速調理包</a></li>
-                <li><a href="firstProduct.html">下酒好朋友</a></li>
-                <li><a href="firstProduct.html">輕食及醬料</a></li>
+                <li>產品介紹 ▾
+                    <!-- 嵌套列表 -->
+                    <ul class="sub-list">
+                        <li><a class="pp" href="firstProduct.html">經典西餐玉米濃湯</a></li>
+                        <li><a class="pp" href="firstProduct.html">芋見獅子頭炊粉湯</a></li>
+                        <li><a class="pp" href="firstProduct.html">砂鍋魚塊湯</a></li>
+                        <li><a class="pp" href="firstProduct.html">櫻花蝦油飯</a></li>
+                        <li><a class="pp" href="firstProduct.html">什錦炒牛肉香鍋</a></li>
+                        <li><a class="pp" href="firstProduct.html">什錦炒豬肉香鍋</a></li>
+                        <li><a class="pp" href="firstProduct.html">蠔油冬粉</a></li>
+                        <li><a class="pp" href="firstProduct.html">冬粉香鍋</a></li>
+                    </ul>
+                </li>
+            </ul>
                 <!-- 其他選單項目 -->
             </ul>
         </div>
@@ -261,16 +276,19 @@ anime.timeline({loop: true})
   });
 
 
-//導覽列
+        // 获取所有主列表项
+        const mainItems = document.querySelectorAll('.main-list li');
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "navtop") {
-    x.className += " responsive";
-  } else {
-    x.className = "navtop";
-  }
-}
+        // 为每个主列表项添加点击事件监听器
+        mainItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // 切换子项的显示状态
+                const subList = item.querySelector('.sub-list');
+                subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+
 </script>
 
 </body>
