@@ -701,6 +701,7 @@ background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的�
   top: 0;
   right: -250px; /*將側邊選單設置在右側並隱藏*/
   transition: right 0.3s ease;
+  overflow-y: scroll;
 }
 
 /* 當 checkbox 被選中時展開選單 */
