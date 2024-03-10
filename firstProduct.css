@@ -1,0 +1,734 @@
+
+body {
+    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.roww {
+  padding:60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-group-item.active {
+  background-color:#135B2E
+}
+  /***********************************卡片*******************************/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  /*padding: 1rem; bug*/
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn a {
+  color:#135B2E;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(15, 86, 47, 0.2);
+  background: transparent;
+  font-family:"Noto Serif TC",Noto Sans TC,sans-serif ;
+}
+
+.btn a:hover {
+  background-color: #135B2E;
+  color: #f6f6f6;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.card_title {
+  color:#135B2E;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+  font-family:Noto Sans, Mitr, Athiti, Noto Sans TC, Noto Sans SC, system-ui, -apple-system, Segoe UI, sans-serif ;
+}
+
+.card_text {
+  color: #6c757d;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.cardh1 {
+  font-family:"STXihei", "微軟正黑體", "黑體", sans-serif;
+  padding: 15px 25px;
+  color:#135B2E;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card_image {
+
+  overflow: hidden;
+}
+
+.card_image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_image img:hover {
+  transform: scale(1.2);
+}
+
+/*卡片字體*/
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:#135B2E;
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: #135B2E;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+}
+
+.footer img {
+  width: 100px; /* 調整logo的寬度 */
+  margin-bottom: 10px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin: 0 5px;
+}
+
+.footer .social-icons a.instagram {
+  background-image: url('../LONEL_NEW/image/instagram.png'); /* Instagram圖標的路徑 */
+}
+
+.footer .social-icons a.facebook {
+  background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的路徑 */
+}
+
+
+/*中間文字*/
+.indexSlogan {
+    margin: 35px auto;
+    padding: 0 25px;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .title {
+    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #135B2E;
+    display: inline-block;
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  .content {
+    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #333;
+  }
+
+/*banner*/
+
+/* 基本样式 */
+.banner {
+    padding-top: 80px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*rwd 設手機置*/
+
+/* 当屏幕宽度小于990px时，应用这些样式 */
+@media (max-width: 990px) {
+    .col-2 {
+      width: 100%;
+    }
+    .cardh1 {
+      display: none;
+    }
+    .roww {
+      padding: 40px;
+      padding-top: 10px;
+    }
+    .col-9 {
+      width: 100%;
+    }
+
+    .indexSlogan {
+      margin: 20px;
+    }
+    .list-group {
+      flex-direction: row;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+    .list-group-item {
+      padding: 0px;
+      text-align:center;
+      border: #135B2E;
+      font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    }
+
+    .content {
+      font-size: 12px;
+    }
+
+    .banner {
+    padding-top: 90px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+}
+
+@media (min-width: 991px) {
+.col-9 {
+  margin-top: -14px;
+  margin-left: 60px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+  /**********************導覽列css****************************/
+  .popular-products-content {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  .ciNxDx {
+    display: flex;
+    flex-direction: column;
+    width: calc(33% - 35%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in 0s;
+  }
+
+  .navbar-wrapper {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+  }
+
+  .iMKRuG {
+    height: 100%;
+    max-width: 1240px;
+    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+    margin:0px auto;
+    padding: 0px;
+    display: flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+  }
+
+  .iMKRuG > .group-actions {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .iMKRuG > .group-actions .button {
+    margin-right: 0px;
+    cursor: pointer;
+    position:relative;
+    font-family:"NSimSun";
+    font-size :16px;
+  }
+
+  .groupactions {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .iMKRuG > .groupactions .button {
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+    font-family: "NSimSun";
+    font-size: 16px;
+  }
+
+  .buttonsecondary { 
+    cursor:pointer;
+    margin-right: 30px;
+    position: relative;
+    font-family: "Noto Serif TC";
+    font-size: 24px;
+    text-decoration: none;
+    color: #020202;
+    outline:none;
+  }
+
+  a,a:focus {
+    outline:none;
+  }
+
+  .carousel {
+    position: relative;
+    top: 80px;
+  }
+
+  /********************************RWD隱藏導覽列******************/
+
+@media screen and (max-width: 930px) {
+.link-secondary {
+  display: none;
+}
+}
+
+@media screen and (max-width: 930px) {
+.left group-actions {
+  display: none;
+}
+
+.logofirst {
+  width: 50px;
+}
+
+.menuBox {
+  display: none;
+}
+.menubutton {
+  margin-right: 20px;
+}
+.firselogo{
+  margin-left: 40px;
+}
+}
+.logogo {
+  width: 80px;
+  margin-left: 20px;
+}
+
+/**********************導覽列其他選單**********************/
+
+ /* 預設隱藏 checkbox */
+ input[type="checkbox"] {
+  display: none;
+}
+
+/* 設置 label 的樣式 */
+.toggle-label {
+  display: block;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  text-align: right; /* 將 Toggle Menu 文字設置在右側 */
+  font-size:30px;
+}
+
+/* 側邊選單的樣式 */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+  position: fixed;
+  top: 0;
+  right: -250px; /*將側邊選單設置在右側並隱藏*/
+  transition: right 0.3s ease;
+  overflow-y: scroll;
+}
+
+/* 當 checkbox 被選中時展開選單 */
+input[type="checkbox"]:checked ~ .sidebar {
+  right: 0;
+}
+
+/* 關閉按鈕的樣式 */
+.close-btn {
+  display: block;
+  text-align: right;
+  padding: 30px;
+  cursor: pointer;
+  color: rgb(89,87,87);
+  font-size: 40px;
+}
+
+/* 選單項目的樣式 */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Noto Serif TC";
+  font-size: 18px;
+}
+
+.sidebar ul li {
+  padding-left: 14pt;
+  padding-top: 10pt;
+}
+
+.sidebar ul li a {
+  color: rgb(89,87,87);
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+  color: #135B2E;
+}
+
+.menubutton {
+padding-top: 14px;
+}
+
+
+
+
+
+
+
+
+.navtop a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+.navtop .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.navtop a:not(:first-child) {display: none;}
+.navtop a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.navtop.responsive {position: relative;}
+.navtop.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navtop.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+
+
+header.navtop {
+  background-image: url(../LONEL_NEW/image/bg.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto;
+  width:100% ;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: 120px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.outerWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+header .wrap {
+  padding: 0 50px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: 120px;
+
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logoImg {
+  width: 130px;
+  min-width: 100%;
+}
+
+.rightBox {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(100% -200px);
+  padding: 0 100px 0 100px;
+}
+
+.left {
+  width: calc();
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center ;
+  justify-content: flex-end;
+}
+
+ul{
+  list-style: none;
+}
+
+li {
+  position: relative;
+  display:inline-block ;
+}
+
+li a {
+  color: #222;
+  display: block;
+  letter-spacing: 2px;
+  font-size: 26px;
+  position: relative;
+  font-family: Noto Sans TC;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:#135B2E;
+}
+
+nav > ul > li > a {
+color: #333;
+text-decoration: none;
+display: block;
+padding: 10px;
+}
+
+/* banner */
+
+.aboutBanner {
+max-width: 100%;
+}
+
+
+
+
+/*下拉底*/
+nav ul ul {
+display: none;
+position: absolute;
+top: 100%;
+right: -43px;
+text-align: left;
+background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
+border-radius: 0 0 5px 5px;
+padding: 20px;
+}
+
+.pp {
+white-space:nowrap;
+display: block;
+letter-spacing: 2px;
+position: relative;
+font-size: 20px;
+padding-left: 0px;
+border-bottom:1px solid #dadada;
+padding:5px
+}
+
+nav ul ul li {
+display: block;
+width: 170px;
+margin: 0;
+}
+
+nav ul ul li:hover {
+/*background-color:#fff;  改變下拉選單的背景顏色 */
+display: block;
+}
+
+li:hover > ul {
+display: block;
+}
+
+li ul li a:hover {
+border-bottom:2px solid #135B2E;
+}
+
+.menubutton ul ul {
+  display: none;
+  position: absolute;
+  }
+
+  /* 側邊產品介紹 */
+  .main-list li {
+    color:rgb(89,87,87);
+    display: block;
+    letter-spacing: 2px;
+    font-size: 26px;
+  }
+
+  .main-list li:hover {
+    color:#135B2E;
+  }
+
+  .sub .pp {
+    padding: 0px;
+  }

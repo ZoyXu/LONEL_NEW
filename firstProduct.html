@@ -5,737 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="firstProduct.css">
   <title>firstProduct</title>
 </head>
 <style>
-
-body {
-    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: auto;
-    padding: 0px;
-    margin: 0px;
-}
-
-.row {
-  padding:80px;
-}
-
-.list-group-item.active {
-  background-color:#135B2E
-}
-  /***********************************卡片*******************************/
-
-/* Font */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-/* Design */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  background-color: #ecf9ff;
-}
-
-body {
-  color: #272727;
-  font-family: 'Quicksand', serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  /*padding: 1rem; bug*/
-}
-
-.main{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-  color:#135B2E;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(15, 86, 47, 0.2);
-  background: transparent;
-  font-family:"Noto Serif TC",Noto Sans TC,sans-serif ;
-}
-
-.btn:hover {
-  background-color: #135B2E;
-  color: #f6f6f6;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
-
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card_content {
-  padding: 1rem;
-  background: #ffffff;
-}
-
-.card_title {
-  color:#135B2E;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
-  font-family:Noto Sans, Mitr, Athiti, Noto Sans TC, Noto Sans SC, system-ui, -apple-system, Segoe UI, sans-serif ;
-}
-
-.card_text {
-  color: #6c757d;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
-}
-.made_by{
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: 35px;
-  text-align: center;
-}
-
-.cardh1 {
-  font-family:"STXihei", "微軟正黑體", "黑體", sans-serif;
-  padding: 15px 25px;
-  color:#135B2E;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.card_image {
-
-  overflow: hidden;
-}
-
-.card_image img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-
-.card_image img:hover {
-  transform: scale(1.2);
-}
-
-/*卡片字體*/
-li a {
-    
-    color: #222;
-    display: block;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 26px;
-    position: relative;
-    font-family: Noto Sans TC;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-li a:hover {
-    color:#135B2E;
-}
-
-
-/*footer*/
-
-.footer {
-  background-color: #135B2E;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer p {
-  margin: 5px 0;
-  font-size: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-}
-
-.footer img {
-  width: 100px; /* 調整logo的寬度 */
-  margin-bottom: 10px;
-}
-
-.footer .social-icons {
-  margin-top: 10px;
-}
-
-.footer .social-icons a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  margin: 0 5px;
-}
-
-.footer .social-icons a.instagram {
-  background-image: url('../LONEL_NEW/image/instagram.png'); /* Instagram圖標的路徑 */
-}
-
-.footer .social-icons a.facebook {
-  background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的路徑 */
-}
-
-
-/*中間文字*/
-.indexSlogan {
-    margin: 35px auto;
-    padding: 0 25px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .title {
-    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-    font-size: 26px;
-    letter-spacing: 1px;
-    color: #333;
-    margin-bottom: 20px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #135B2E;
-    display: inline-block;
-    opacity: 0; 
-    animation: fadeIn 1.5s ease-in-out forwards;
-  }
-
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-  .content {
-    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-    font-size: 19px;
-    letter-spacing: 1px;
-    line-height: 2;
-    color: #333;
-  }
-
-/*banner*/
-
-/* 基本样式 */
-.banner {
-    margin-top: 60px;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-/*rwd 設置*/
-
-/* 当屏幕宽度小于990px时，应用这些样式 */
-@media (max-width: 990px) {
-    .col-2 {
-      width: 100%;
-    }
-    .cardh1 {
-      display: none;
-    }
-    .row {
-      padding: 40px;
-      padding-top: 10px;
-    }
-    .col-9 {
-      width: 100%;
-    }
-
-    .indexSlogan {
-      margin: 20px;
-    }
-    .list-group {
-      flex-direction: row;
-      padding-bottom: 20px;
-      font-size: 18px;
-    }
-    .list-group-item {
-      padding: 0px;
-      text-align:center;
-      border: #135B2E;
-      font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-    }
-
-    .content {
-      font-size: 12px;
-    }
-
-    .banner {
-    margin-top: 80px;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-}
-
-
-
-
-
-
-
-  /**********************導覽列css****************************/
-  .popular-products-content {
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .ciNxDx {
-    display: flex;
-    flex-direction: column;
-    width: calc(33% - 35%);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
-    cursor: pointer;
-    transition: box-shadow 0.2s ease-in 0s;
-  }
-
-  .navbar-wrapper {
-    height: 90px;
-    padding: 0px;
-    position: fixed;
-    width: 100%;
-    top: 0; /* 將導覽列固定在視窗的頂部 */
-    left: 0; /* 將導覽列固定在視窗的左側 */
-    z-index: 1000; /* 確保導覽列位於其他元素之上 */
-    background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .iMKRuG {
-    height: 100%;
-    max-width: 1240px;
-    margin:0px auto;
-    padding: 0px;
-    display: flex;
-    -webkit-box-pack:justify;
-    justify-content:space-between;
-  }
-
-  .iMKRuG > .group-actions {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-
-  .iMKRuG > .group-actions .button {
-    margin-right: 0px;
-    cursor: pointer;
-    position:relative;
-    font-family:"STXihei", "微軟正黑體", "黑體", sans-serif;
-    font-size :16px;
-  }
-
-  .groupactions {
-    display: flex;
-    -webkit-box-align: center;
-    /* align-items: center; */
-  }
-
-  .iMKRuG > .groupactions .button {
-    cursor: pointer;
-    margin-right: 30px;
-    position: relative;
-    font-family:"STXihei", "微軟正黑體", "黑體", sans-serif;
-    font-size: 16px;
-  }
-
-  .buttonsecondary { 
-    cursor:pointer;
-    margin-right: 30px;
-    position: relative;
-    font-family: "Noto Serif TC";
-    font-size: 24px;
-    text-decoration: none;
-    color: #020202;
-    outline:none;
-  }
-
-  a,a:focus {
-    outline:none;
-  }
-
-  .carousel {
-    position: relative;
-    top: 80px;
-  }
-
-  /********************************RWD隱藏導覽列******************/
-
-@media screen and (max-width: 930px) {
-.link-secondary {
-  display: none;
-}
-}
-
-@media screen and (max-width: 930px) {
-.left group-actions {
-  display: none;
-}
-
-.logofirst {
-  width: 70px;
-  margin-left: 7px;
-}
-
-.menuBox {
-  display: none;
-}
-.menubutton {
-  margin-right: 30px;
-}
-}
-
-
-/**********************導覽列其他選單**********************/
-
- /* 預設隱藏 checkbox */
- input[type="checkbox"] {
-  display: none;
-}
-
-/* 設置 label 的樣式 */
-.toggle-label {
-  display: block;
-  cursor: pointer;
-  margin-bottom: 20px;
-  text-align: right; /* 將 Toggle Menu 文字設置在右側 */
-  font-size:30px;
-}
-
-/* 側邊選單的樣式 */
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
-  position: fixed;
-  top: 0;
-  right: -250px; /*將側邊選單設置在右側並隱藏*/
-  transition: right 0.3s ease;
-}
-
-/* 當 checkbox 被選中時展開選單 */
-input[type="checkbox"]:checked ~ .sidebar {
-  right: 0;
-}
-
-/* 關閉按鈕的樣式 */
-.close-btn {
-  display: block;
-  text-align: right;
-  padding: 30px;
-  cursor: pointer;
-  color: rgb(89,87,87);
-  font-size: 40px;
-}
-
-/* 選單項目的樣式 */
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-  font-size: 18px;
-}
-
-.sidebar ul li {
-  padding: 20px;
-}
-
-.sidebar ul li a {
-  color: rgb(89,87,87);
-  text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  text-decoration: none;
-  color: #135B2E;
-}
-
-.menubutton {
-padding-top: 6px;
-}
-
-
-
-
-
-
-
-
-.navtop a.active {
-background-color: #04AA6D;
-color: white;
-}
-
-.navtop .icon {
-display: none;
-}
-
-@media screen and (max-width: 600px) {
-.navtop a:not(:first-child) {display: none;}
-.navtop a.icon {
-  float: right;
-  display: block;
-}
-}
-
-@media screen and (max-width: 600px) {
-.navtop.responsive {position: relative;}
-.navtop.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.navtop.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-}
-}
-
-
-header.navtop {
-  background-image: url(../LONEL_NEW/image/bg.jpg);
-  background-repeat: repeat;
-  background-position: center;
-  background-size: auto;
-  width:100% ;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  height: 120px;
-}
-
-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 50;
-}
-
-.outerWrap {
-  position: relative;
-  overflow: hidden;
-}
-
-header .wrap {
-  padding: 0 50px;
-  -webkit-box-align: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  max-width: 100%;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  height: 120px;
-
-}
-
-.wrap {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.logoImg {
-  width: 130px;
-  min-width: 100%;
-}
-
-.rightBox {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: flex-end;
-  width: calc(100% -200px);
-  padding: 0 100px 0 100px;
-}
-
-.left {
-  width: calc();
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center ;
-  justify-content: flex-end;
-}
-
-ul{
-  list-style: none;
-}
-
-li {
-  position: relative;
-  display:inline-block ;
-}
-
-li a {
-  
-  color: #222;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 26px;
-  position: relative;
-  font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-li a:hover {
-  color:#135B2E;
-}
-
-nav > ul > li > a {
-color: #333;
-text-decoration: none;
-display: block;
-padding: 10px;
-}
-
-/* banner */
-
-.aboutBanner {
-max-width: 100%;
-}
-
-
-
-
-/*下拉底*/
-nav ul ul {
-display: none;
-position: absolute;
-top: 100%;
-right: -20%;
-text-align: left;
-background-image: url(https://www.miaoli-shop.com.tw/images/main_bg.jpg);
-border-radius: 0 0 5px 5px;
-padding: 20px;
-
-}
-
-.pp {
-display: block;
-font-weight: 500;
-letter-spacing: 2px;
-position: relative;
-font-size: 23px;
-padding-left: 0px;
-border-bottom:1px solid #dadada;
-padding: 15px 0px 15px 0px;
-}
-nav ul ul li {
-display: block;
-width: 130px;
-margin: 0;
-}
-
-nav ul ul li:hover {
-/*background-color:#fff;  改變下拉選單的背景顏色 */
-display: block;
-}
-
-li:hover > ul {
-display: block;
-}
-
-li ul li a:hover {
-border-bottom:2px solid #135B2E;
-}
-
-.leftlogo{
-  margin-left: 19px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -743,56 +16,70 @@ border-bottom:2px solid #135B2E;
 </style>
 <body>
 
-  <!--上方導覽列-->
-  <div class="navbar-wrapper shadow p-3 mb-5 bg-body" >
-    <div class="iMKRuG">
-      <div class="left group-actions">
-        <div class="logofirst">
-          <a href="index.html" > <img src="../LONEL_NEW/image/LOGO.png" width="100"></a>
-        </div>
+<!--上方導覽列-->
+<div class="navbar-wrapper shadow p-3 mb-5 bg-body">
+  <div class="iMKRuG">
+    <div class="left group-actions">
+      <div class="logofirst">
+        <a href="index.html" > <img class="firselogo" src="../LONEL_NEW/image/LOGO.png" width="100px"></a>
       </div>
-      <div class="groupactions" >
-        <nav class="menuBox"> 
-          <ul>
-            <li>
-                <a href="index.html">樂乃農場</a>
-            </li>
-            <li>
-              <a href="about.html">民生食品</a>
+    </div>
+    <div class="groupactions" >
+      <nav class="menuBox"> 
+        <ul>
+          <li>
+              <a href="index.html">樂乃農場</a>
           </li>
-            <li>
-                <a href="#">產品介紹</a>
-                <ul>
-                  <li><a class="pp" href="firstProduct.html">快速調理包</a></li>
-                  <li><a class="pp" href="firstProduct.html">下酒好朋友</a></li>
-                  <li><a class="pp" href="firstProduct.html">輕食及醬料</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      <!-- 其他選單項目 -->
+          <li>
+            <a href="about.html">民生食品</a>
+        </li>
+          <li>
+              <a href="#">產品介紹 ▾</a>
+              <ul>
+                <li><a class="pp" href="product02.html">經典西餐玉米濃湯</a></li>
+                <li><a class="pp" href="firstProduct.html">芋見獅子頭炊粉湯</a></li>
+                <li><a class="pp" href="firstProduct.html">砂鍋魚塊湯</a></li>
+                <li><a class="pp" href="firstProduct.html">櫻花蝦油飯</a></li>
+                <li><a class="pp" href="firstProduct.html">什錦炒牛肉香鍋</a></li>
+                <li><a class="pp" href="firstProduct.html">什錦炒豬肉香鍋</a></li>
+                <li><a class="pp" href="firstProduct.html">蠔油冬粉</a></li>
+                <li><a class="pp" href="firstProduct.html">冬粉香鍋</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    <!-- 其他選單項目 -->
       <div class="menubutton">
         <input type="checkbox" id="toggle">
         <label for="toggle" class="toggle-label">&#9776;</label>
         <div class="sidebar">
             <label for="toggle" class="close-btn">&times;</label>
-            <img class="leftlogo" src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo" width="100px">
-            <ul>
+            <img class="logogo"src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo">
+              <ul class="main-list">
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about.html">民生食品</a></li>
-                <li><a href="firstProduct.html">產品介紹</a></li>
-                <li><a href="firstProduct.html">快速調理包</a></li>
-                <li><a href="firstProduct.html">下酒好朋友</a></li>
-                <li><a href="firstProduct.html">輕食及醬料</a></li>
-                <!-- 其他選單項目 -->
+                <li><a href="#">產品介紹 ▾</a>
+                    <ul class="sub-list"  overflow-y="scroll">
+                        <li><a class="pp" href="product02.html">經典西餐玉米濃湯</a></li>
+                        <li><a class="pp" href="firstProduct.html">芋見獅子頭炊粉湯</a></li>
+                        <li><a class="pp" href="firstProduct.html">砂鍋魚塊湯</a></li>
+                        <li><a class="pp" href="firstProduct.html">櫻花蝦油飯</a></li>
+                        <li><a class="pp" href="firstProduct.html">什錦炒牛肉香鍋</a></li>
+                        <li><a class="pp" href="firstProduct.html">什錦炒豬肉香鍋</a></li>
+                        <li><a class="pp" href="firstProduct.html">蠔油冬粉</a></li>
+                        <li><a class="pp" href="firstProduct.html">冬粉香鍋</a></li>
+                    </ul>
+                </li>
+              </ul>
             </ul>
         </div>
       </div>  
-      </div>
-  </div>
-  </div>
+    </div>
+</div>
+</div>
 </div>
 <!--上方導覽列END-->
+
 
 
 
@@ -818,20 +105,224 @@ border-bottom:2px solid #135B2E;
 
 
 
-  <div class="row">
+  <div class="roww">
     <div class="col-2" >
       <div class="list-group list-group-flush" id="list-tab" role="tablist">
-        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">快速調理包</a>
-        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">下酒好朋友</a>
-        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">輕食及醬料</a>
+        <!-- <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"></a> -->
+        <a class="list-group-item list-group-item-action active" id="list-profile-list" data-bs-toggle="list" href="#list-profile0" role="tab" aria-controls="list-profile0">美味湯品</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">精緻主食</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">快炒鍋物</a>
       </div>
     </div>
-    <!-- 快速調理包-->
+
+    <!-- 快速調理包 首頁顯示 -->
     <div class="col-9">
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="lizst-home" role="tabpanel" aria-labelledby="list-home-list">
           <div class="main">
-            <div class="cardh1"><p>快速調理包</p></div>
+            <div class="cardh1"><p>美味湯品</p></div>
+            <ul class="cards">
+              <li class="cards_item">
+                          <div class="card" a href="#">
+                          <a href="product02.html">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT_07.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">經典西餐玉米濃湯</h2>
+                              <p class="card_text">在家就能享受餐廳級的玉米濃湯，選用優質鮮奶油、鮮洋蔥、塊狀馬鈴薯、飽滿玉米。</p>
+                              <br>
+                            </a>
+                              <button class="btn card_btn" ><a href="product02.html">查看詳情</a></button>
+                            </div>
+                          </div>
+                        </li>
+              <li class="cards_item">
+                <div class="card">
+                <a href="#">
+                  <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">芋見獅子頭炊粉湯</h2>
+                    <p class="card_text">湯汁濃郁，軟糯的芋頭和香噴噴的獅子頭，令人垂涎欲滴</p>
+                    <br>
+                  </a>
+                    <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                <a href="#">
+                  <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">砂鍋魚塊湯</h2>
+                    <p class="card_text">熬煮出的湯汁鮮美，每一口都能品味到魚的鮮甜</p>
+                    <br>
+                  </a>
+                    <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+                <!-- 美味湯品 -->
+                <div class="tab-pane fade" id="list-profile0" role="tabpanel" aria-labelledby="list-profile0-list">
+                  <div class="right-c-box">
+                    <div class="main">
+                      <div class="cardh1"><p>美味湯品</p></div>
+                      <ul class="cards">
+                        <li class="cards_item">
+                          <div class="card">
+                          <a href="product02.html">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT_07.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">經典西餐玉米濃湯</h2>
+                              <p class="card_text">在家就能享受餐廳級的玉米濃湯，選用優質鮮奶油、鮮洋蔥、塊狀馬鈴薯、飽滿玉米。</p>
+                              <br>
+                            </a>
+                              <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards_item">
+                          <div class="card">
+                          <a href="#">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">芋見獅子頭炊粉湯</h2>
+                              <p class="card_text">湯汁濃郁，軟糯的芋頭和香噴噴的獅子頭，令人垂涎欲滴。</p>
+                              <br>
+                            </a>
+                              <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards_item">
+                          <div class="card">
+                          <a href="#">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">砂鍋魚塊湯</h2>
+                              <p class="card_text">熬煮出的湯汁鮮美，每一口都能品味到魚的鮮甜。</p>
+                              <br>
+                            </a>
+                              <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+        <!-- 精緻主食 -->
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <div class="right-c-box">
+            <div class="main">
+              <div class="cardh1"><p>精緻主食</p></div>
+              <ul class="cards">
+                <li class="cards_item">
+                  <div class="card">
+                  <a href="#">
+                    <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                    <div class="card_content">
+                      <h2 class="card_title">櫻花蝦油飯</h2>
+                      <p class="card_text">嚴選薄殼櫻花蝦，散發香濃甘甜滋味，增添油飯層次。</p>
+                  </a>
+                      <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards_item">
+                  <div class="card">
+                  <a href="#">
+                    <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                    <div class="card_content">
+                      <h2 class="card_title">蠔油冬粉</h2>
+                      <p class="card_text">粉絲彈牙，蠔油香氣四溢，是一道充滿家鄉味的美味佳餚。</p>
+                  </a>
+                      <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--快炒鍋物-->
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          <div class="right-c-box">
+            <div class="main">
+              <div class="cardh1"><p>快炒鍋物</p></div>
+              <ul class="cards">
+                <li class="cards_item">
+                  <div class="card">
+                  <a href="#">
+                    <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                    <div class="card_content">
+                      <h2 class="card_title">什錦炒牛肉香鍋</h2>
+                      <p class="card_text">牛肉鮮嫩多汁，搭配各式時蔬，散發出香氣四溢的鍋味</p>
+                      <br>
+                  </a>
+                      <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                    </div>
+                  </div>
+                </li>
+      
+                <li class="cards_item">
+                  <div class="card">
+                  <a href="#">
+                    <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                    <div class="card_content">
+                      <h2 class="card_title">什錦炒豬肉香鍋</h2>
+                      <p class="card_text">豬肉入口即化，搭配豐富的蔬菜，讓人回味無窮。</p>
+                      <br>
+                  </a>
+                      <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li class="cards_item">
+                  <div class="card">
+                  <a href="#">
+                    <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT.jpg"></div>
+                    <div class="card_content">
+                      <h2 class="card_title">冬粉香鍋</h2>
+                      <p class="card_text">粉絲入味，搭配多種配料，散發出令人垂涎的香氣。</p>
+                      <br>
+                  </a>
+                      <button class="btn card_btn"><a href="#">查看詳情</a></button>
+                    </div>
+                  </div>
+                </li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="roww">
+    <div class="col-2" >
+      <div class="list-group list-group-flush" id="list-tab" role="tablist"> -->
+        <!-- <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"></a> -->
+        <!-- <a class="list-group-item list-group-item-action active" id="list-profile-list" data-bs-toggle="list" href="#list-profile0" role="tab" aria-controls="list-profile0">快速調理包</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">下酒好朋友</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">輕食及醬料</a>
+      </div>
+    </div> -->
+
+    <!-- 快速調理包-->
+    <!-- <div class="col-9">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="lizst-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="main">
+            <div class="cardh1"><p></p></div>
             <ul class="cards">
               <li class="cards_item">
                 <div class="card">
@@ -848,7 +339,7 @@ border-bottom:2px solid #135B2E;
                 </div>
               </li>
               <li class="cards_item">
-        z        <div class="card">
+                <div class="card">
                 <a href="#">
                   <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT_02.jpg"></div>
                   <div class="card_content">
@@ -875,9 +366,59 @@ border-bottom:2px solid #135B2E;
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
+                <!-- 下酒好朋友 -->
+                <!-- <div class="tab-pane fade" id="list-profile0" role="tabpanel" aria-labelledby="list-profile0-list">
+                  <div class="right-c-box">
+                    <div class="main">
+                      <div class="cardh1"><p>快速調理包</p></div>
+                      <ul class="cards">
+                        <li class="cards_item">
+                          <div class="card">
+                          <a href="product01.html">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT_01.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">麻辣乾鍋</h2>
+                              <p class="card_text">使用特製的麻辣醬汁，將辣椒、香料和肉類完美結合。</p>
+                          </a>
+                              <a href="product01.html">
+                              <button class="btn card_btn">查看詳情</button>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards_item">
+                          <div class="card">
+                          <a href="#">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT_02.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">塔香杏鮑菇</h2>
+                              <p class="card_text">九層塔香氣十足，三杯風味，下飯夠味。</p>
+                              <br>
+                            </a>
+                              <button class="btn card_btn">查看詳情</button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards_item">
+                          <div class="card">
+                          <a href="#">
+                            <div class="card_image"><img src="../LONEL_NEW/image/PRODUCT_03.jpg"></div>
+                            <div class="card_content">
+                              <h2 class="card_title">素食紅燒牛肉湯麵</h2>
+                              <p class="card_text">紅燒湯頭帶勁有味、刀削麵條彈牙有勁。</p>
+                              <br>
+                            </a>
+                              <button class="btn card_btn">查看詳情</button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
         <!-- 下酒好朋友 -->
-        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        <!-- <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
           <div class="right-c-box">
             <div class="main">
               <div class="cardh1"><p>下酒好朋友</p></div>
@@ -897,9 +438,9 @@ border-bottom:2px solid #135B2E;
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- 輕食及醬料 -->
-        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+        <!-- <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
           <div class="right-c-box">
             <div class="main">
               <div class="cardh1"><p>輕食及醬料</p></div>
@@ -938,7 +479,7 @@ border-bottom:2px solid #135B2E;
         <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   
@@ -956,6 +497,21 @@ border-bottom:2px solid #135B2E;
         <a href="https://www.facebook.com/profile.php?id=100063876762363" class="facebook"></a>
       </div>
 </footer>    
+
+
+<script>
+  // 获取所有主列表项
+  const mainItems = document.querySelectorAll('.main-list li');
+
+  // 为每个主列表项添加点击事件监听器
+  mainItems.forEach(item => {
+      item.addEventListener('click', () => {
+          // 切换子项的显示状态
+          const subList = item.querySelector('.sub-list');
+          subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
+      });
+  });
+</script>
 
     
 </body>

@@ -16,17 +16,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   /**********************導覽列css****************************/
   .popular-products-content {
     display: flex;
@@ -454,159 +443,274 @@ border-bottom:2px solid #135B2E;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*ABOUT*/
-
-.mainArea {
-  padding: 30px 0 60px;
-}
-
-@media (min-width: 920px) {
-  .mainArea {
-    padding: 50px 0 20px;
+  /*中間文字*/
+  .indexSlogan {
+    margin: 35px auto;
+    padding: 0 25px;
+    max-width: 600px;
+    text-align: center;
   }
 
+  .title {
+    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #135B2E;
+    display: inline-block;
+    opacity: 0; /* 初始时设置透明度为 0 */
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.wrap {
-  max-width: 1500px;
-  width: 100%;
+  .content {
+    font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #333;
+  }
+
+
+/********************************** 商品輪播容器樣式 *********************************/
+.slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.titleBox {
-  padding: 15px;
-  color: #222;
+/* 主要輪播區塊樣式 */
+.main-slide {
+  text-align: center;
   position: relative;
-  margin-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid rgba(66,66,66,0.3);
 }
 
-@media (min-width:920px) {
-  .titleBox{
-    border-bottom: 1px solid rgba(66,66,66,0.3);
+.main-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 縮略圖區塊樣式 */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  max-width: 100px;
+  height: auto;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail.active {
+  opacity: 1;
+}
+
+/*小於990*/
+@media (max-width: 990px){
+  .slider {
+    max-width: 310px;
+    padding: 20px 20px 20px 20px;
   }
+  .ant-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .ant02 {
+    padding: 20px;
+  }
+
+  .ProductInfoTabs {
+    margin: 30px;
+  }
+
+  /* 選項內容的樣式 */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+}
+
+/*電腦*/
+@media screen and (min-width: 991px){
+  .ProductInfoTabs {
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  /* 選項內容的樣式 */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
   
 }
 
-.titleBox em {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  font-family: "Playfair Display";
-  text-align: left;
+
+/*******************************CAKEBODY ****************************/
+
+
+.ejvTMu {
+max-width:var(--content-max-width);
+width:100%;
+justify-content: space-between;
+/* display: flex; */
 }
 
-.titleBox h2 {
+
+.ant-row {
+  display: flex;
+  padding-top: 140px;
+  margin-bottom: 40px;
+}
+
+
+.slider {
+  width: 500px;
+
+}
+
+.active {
+  border-radius: 7px;
+}
+
+.thumbnail {
+  border-radius: 7px;
+}
+
+
+
+/******************************右邊切版******************************/
+
+/* 電腦 */
+
+  h1 {
+    font-size: 34px;
+    color: #333;
+    letter-spacing: 0px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    font-family : "STXihei", "微軟正黑體", "黑體", sans-serif;
+    letter-spacing:6px;
+    padding-left: 25px;
+  }
+
+
+
+.hint {
+  font-size: 14px;
+  color: rgb(89,97,87);
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+.ant02 {
+  padding: 18px;
+}
+
+/* 電腦 */
+@media screen and (min-width: 991px){
+.ProductConfigPanel__Wrapper-sc-1folwl6-0 p {
   font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 6px;
-  font-family:"STXihei", "微軟正黑體", "黑體", sans-serif ;
-}
-
-.titleBox p {
-  color: #5e5e5e;
-  font-size: 19px;
-  letter-spacing: 6px;
-  font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-  padding-top: 20px;
-}
-
-.mainArea .contenBox {
-  clear: both;
-}
-
-.articleTitle {
-  padding: 20px;
-  clear: both;
-  margin-bottom: 15px;
+  color: #333;
+  letter-spacing: 0px;
   padding-top: 10px;
-  font-weight: 400;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(229,229,234);
+  border-bottom: 1px solid rgb(229,229, 234);
+  white-space: pre-line;
+  text-align:left;
+  font-family : "Noto Serif TC";
+  padding-left: 20px;
+}
+}
+
+/* 手機 */
+@media screen and (max-width: 990px){
+  .ProductConfigPanel__Wrapper-sc-1folwl6-0 p {
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(229,229,234);
+    border-bottom: 1px solid rgb(229,229, 234);
+    white-space: pre-line;
+    text-align:left;
+    font-family : "Noto Serif TC";
+    padding-left: 20px;
+    white-space:pre-wrap;
+}
+}
+
+.tab-content p {
+  line-height: 1.5; 
   font-size: 20px;
-  color: #181818;
-}
-
-.textEditor {
-  line-height: 3;
-  margin-top: 0;
-  clear: both;
-  font-size: 15px;
-  color: #4b4b4b;
-  font-weight: 300;
-}
-
-.textEditor .contentBuilder {
-  padding: 10px;
-}
-
-.textEditor .contentBuilder .roww {
-  margin: 0 -10px;
-}
-
-@media (min-width: 640px) {
-  .textEditor .contentBuilder .column.two-third {
-    width: 50%;
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
-    
-  }
-}
-
-.textEditor .contentBuilder p {
-  margin: 12px 0 20px 0;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.textEditor .contentBuilder p span {
-  line-height: inherit;
-}
-
-/*@media (min-width: 640px) {
-  .textEditor .contentBuilder .column.third {
-    width: 33%
-  }
-}*/
-
-
-@media (min-width: 640px) {
-  .textEditor .contentBuilder .column.third {
-    width: 33%
-  }
+  color: rgb(89,97,87);
+  letter-spacing: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(229,229,234);
+  border-bottom: 1px solid rgb(229,229, 234);
+  white-space: pre-line;
+  font-family : "STXihei", "微軟正黑體", "黑體", sans-serif;
 }
 
 
-.textEditor .contentBuilder .center {
-  text-align: center;
+
+
+/***************************下方資訊*********************/
+
+  /* 列表群組的樣式 */
+  .list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px; /* 按鈕之間的間距 */
 }
 
-.textEditor .contentBuilder img {
-  max-width: 90%;
+/* 列表項目的樣式 */
+.list-item {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
 }
 
-img {
-  height: auto;
+.list-item:hover {
+  background-color: #135B2E;
+  color: #f0f0f0;
 }
+
+
 
 /*footer*/
 
@@ -648,248 +752,45 @@ img {
 }
 
 
-/*******ABOUT2*********/
+/*footer*/
 
-.mainArea2 {
-  margin-top: 50px;
+.footer {
+  background-color: #135B2E;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.wrap2 {
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 100px;
+.footer p {
+  margin: 5px 0;
+  font-size: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+}
+
+.footer img {
+  width: 100px; /* 調整logo的寬度 */
+  margin-bottom: 10px;
+}
+
+.footer .social-icons {
   margin-top: 10px;
 }
 
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin: 0 5px;
+}
 
+.footer .social-icons a.instagram {
+  background-image: url('../LONEL_NEW/image/instagram.png'); /* Instagram圖標的路徑 */
+}
 
-.titleBox2 {
-  color: #222;
-  position: relative;
-  margin-bottom: 30px;
-  margin-top: 100px;
-  padding-top: 150px;
-  border-bottom: 1px solid rgba(66,66,66,0.3);
+.footer .social-icons a.facebook {
+  background-image: url('../LONEL_NEW/image/facebook.png'); /* Facebook圖標的路徑 */
 }
 
 
-.titleBox2 em {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  font-family: "Playfair Display";
-  text-align: left;
-  margin-top: 50px;
-}
 
-.titleBox2 h2 {
-  padding: 15px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 6px;
-  font-family:"STXihei", "微軟正黑體", "黑體", sans-serif ;
-}
-
-.titleBox2 p {
-  padding: 15px;
-  color: #5e5e5e;
-  font-size: 19px;
-  letter-spacing: 2px;
-  font-family: "STXihei", "微軟正黑體", "黑體", sans-serif;
-  padding-top: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .titleBox2 {
-    color: #222;
-    position: relative;
-    margin-bottom: 30px;
-    margin-top: -350px;
-    padding-top: 150px;
-  }
-
-}
-
-.mainArea2 .contenBox {
-  clear: both;
-}
-
-.articleTitle2 {
-  padding: 15px;
-  clear: both;
-  margin-bottom: 15px;
-  padding-top: 10px;
-  font-weight: 400;
-  font-size: 20px;
-  color: #181818;
-}
-
-.textEditor2 {
-  margin-top: 0;
-  clear: both;
-  font-size: 18px;
-  color: #4b4b4b;
-  font-weight: 300;
-  line-height: 1.8;
-}
-
-.textEditor2 .contentBuilder {
-  padding: 10px;
-  line-height: 1.8;
-}
-
-.textEditor2 .contentBuilder .roww {
-  margin: 0 -10px;
-}
-
-@media (min-width: 640px) {
-  .textEditor2 .contentBuilder .column.two-third {
-    width: 50%;
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
-  }
-}
-
-.textEditor2 .contentBuilder p {
-  margin: 12px 0 20px 0;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-.textEditor2 .contentBuilder p span {
-  line-height: inherit;
-}
-
-/*@media (min-width: 640px) {
-  .textEditor .contentBuilder .column.third {
-    width: 33%
-  }
-}*/
-
-
-@media (min-width: 640px) {
-  .textEditor2 .contentBuilder2 .column2.third2 {
-    width: 33%
-  }
-}
-
-
-.textEditor2 .contentBuilder2 .center2 {
-  text-align: center;
-}
-
-
-.img2 {
-  max-width: 23%;
-  height: auto;
-  padding-left: 20px;
-}
-
-.column {
-  display: flex;
-  padding: 15px;
-  padding-right: 10px;
-}
-
-/*@media screen and (max-width: 992px) {
-  .column {
-    padding: 15px;
-    padding-right: 10px;
-  }
-}*/
-
-.img3 {
-  max-width: 98%;
-  height: auto;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 40px;
-}
-
-@media screen and (max-width: 992px) {
-  .img3 {
-    display: none;
-  }
-}
-
-
-/*FOOTER*/
-
-.footer2 {
-  margin-top: 150px;
-  width: 100%;
-  background-color: #135B2E;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footerrow2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.col-32 {
-  padding: 30px;
-  white-space: pre-line;
-  text-align: left;
-  font-family: 'Noto Sans TC';
-}
-
-/*圖片*/
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.gallery img {
-  width: calc(25% - 10px); /* 在一般網頁上顯示四個圖片，每個圖片佔據25%的寬度 */
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  .gallery img {
-    width: calc(80% - 10px); /* 在手機上顯示四個圖片，每個圖片佔據50%的寬度 */
-  }
-
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction:column;
-    align-items:center;
-  }
-}
-
-/* 螢幕小於990px才會顯示圖片 */
-
-.gallery2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-@media screen and (max-width: 600px) {
-  .gallery2 img {
-    width: calc(80% - 10px); /* 在手機上顯示四個圖片，每個圖片佔據50%的寬度 */
-
-  }
-}
-
-/*大於1000隱藏*/
-@media screen and (min-width: 1000px) {
-  .gallery2 img {
-    display: none;
-  }
-}
 

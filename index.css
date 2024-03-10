@@ -728,7 +728,8 @@ input[type="checkbox"]:checked ~ .sidebar {
 }
 
 .sidebar ul li {
-  padding: 14px;
+  padding-left: 14pt;
+  padding-top: 10pt;
 }
 
 .sidebar ul li a {
@@ -859,7 +860,6 @@ li {
 }
 
 li a {
-  
   color: #222;
   display: block;
   font-weight: 500;
