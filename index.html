@@ -20,7 +20,7 @@
     <div class="iMKRuG">
       <div class="left group-actions">
         <div class="logofirst">
-          <a href="index.html" > <img class="firselogo" src="../LONEL_NEW/image/LOGO.png" width="100px"></a>
+          <a href="index.html" > <img class="firselogo" src="image/LOGO.png" width="100px"></a>
         </div>
       </div>
       <div class="groupactions" >
@@ -53,7 +53,7 @@
           <label for="toggle" class="toggle-label">&#9776;</label>
           <div class="sidebar">
               <label for="toggle" class="close-btn">&times;</label>
-              <img class="logogo"src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo">
+              <img class="logogo"src="image/LOGO.png" href="#" alt="logo">
                 <ul class="main-list">
                   <li><a href="index.html">首頁</a></li>
                   <li><a href="about.html">民生食品</a></li>
@@ -92,16 +92,16 @@
 
   <div class="mySlides fade">
      <div class="ml3" >LONEL</div>
-    <img class="banner" src="../LONEL_NEW/image/HOME_BANNER_01.jpg" >
+    <img class="banner" src="image/HOME_BANNER_01.jpg" >
     
   </div>
   
   <div class="mySlides fade">
-    <img class="banner" src="../LONEL_NEW/image/HOME_BANNER_03.jpg" >
+    <img class="banner" src="image/HOME_BANNER_03.jpg" >
   </div>
   
   <div class="mySlides fade">
-    <img class="banner" src="../LONEL_NEW/image/HOME_BANNER_05.jpg" >
+    <img class="banner" src="image/HOME_BANNER_05.jpg" >
   </div>
   
   <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -132,11 +132,11 @@
 <div class="aboutWrap">
   <section class="m-width wow fadeIn" id="featurewheat" >
       <div class="pic is-show">
-          <img class="pic01" src="../LONEL_NEW/image/HOME_ECO_01.jpg" >
+          <img class="pic01" src="image/HOME_ECO_01.jpg" >
       </div>
       <div class="container">
           <div class="titletext">
-              <img class="eco" src="../LONEL_NEW/image/HOME_text_03.png" >
+              <img class="eco" src="image/HOME_text_03.png" >
           </div>
           <div class="content">
               致力於打造一個永續農場，透過環保農業方法和資源節約，共同維護地球的生態平衡。
@@ -148,11 +148,11 @@
   </section>
   <section class="m-width2 wow fadeIn" id="featurewheat" >
     <div class="pic is-show">
-        <img class="pic01" src="../LONEL_NEW/image/HOME_ECO_02.jpg" >
+        <img class="pic01" src="image/HOME_ECO_02.jpg" >
     </div>
     <div class="container2">
         <div class="titletext">
-            <img class="eco" src="../LONEL_NEW/image/HOME_text_04.png" >
+            <img class="eco" src="image/HOME_text_04.png" >
         </div>
         <div class="content">
           支持友善台灣農民，培育農業愛心，共同守護土地的美好和永續發展。
@@ -164,11 +164,11 @@
 </section>
 <section class="m-width wow fadeIn" id="featurewheat" >
   <div class="pic is-show">
-      <img class="pic01" src="../LONEL_NEW/image/HOME_ECO_03.jpg" >
+      <img class="pic01" src="image/HOME_ECO_03.jpg" >
   </div>
   <div class="container">
       <div class="titletext">
-          <img class="eco" src="../LONEL_NEW/image/HOME_text_05.png" >
+          <img class="eco" src="image/HOME_text_05.png" >
       </div>
       <div class="content">
         食在安心，追求品質，用心栽種，將健康帶進每一道美味。
@@ -186,19 +186,19 @@
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="../LONEL_NEW/image/ABOUT_NEW_01.jpg" width="100%">
+      <img src="image/ABOUT_NEW_01.jpg" width="100%">
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="../LONEL_NEW/image/ABOUT_NEW_02.jpg" width="100%" >
+      <img src="image/ABOUT_NEW_02.jpg" width="100%" >
     </div>
   </div>
   
   <div class="column">
     <div class="card">
-      <img src="../LONEL_NEW/image/ABOUT_NEW_03.jpg" width="100%">
+      <img src="image/ABOUT_NEW_03.jpg" width="100%">
     </div>
   </div>
 </div>
@@ -206,7 +206,7 @@
   <!--FOOTER-->
 
   <footer class="footer">
-    <img src="../LONEL_NEW/image/LOGO_whit.png" alt="公司Logo">
+    <img src="image/LOGO_whit.png" alt="公司Logo">
     <p>民生食品工業股份有限公司 Min Sheng Foods Industry Inc.</p>
     <p>統一編號 : 60456518 彰化縣北斗鎮中山路二段519巷20號</p>
     <p>Tel : 04-8870991  Fax : 04-8887505  Copyright © 樂乃農場 2023</p>
@@ -274,13 +274,13 @@ anime.timeline({loop: true})
   });
 
 
-        // 获取所有主列表项
+        // 列表
         const mainItems = document.querySelectorAll('.main-list li');
 
-        // 为每个主列表项添加点击事件监听器
+        // 監聽
         mainItems.forEach(item => {
             item.addEventListener('click', () => {
-                // 切换子项的显示状态
+                // 切換
                 const subList = item.querySelector('.sub-list');
                 subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
             });

@@ -18,7 +18,7 @@
     <div class="iMKRuG">
       <div class="left group-actions">
         <div class="logofirst">
-          <a href="index.html" > <img class="firselogo" src="../LONEL_NEW/image/LOGO.png" width="100px"></a>
+          <a href="index.html" > <img class="firselogo" src="image/LOGO.png" width="100px"></a>
         </div>
       </div>
       <div class="groupactions" >
@@ -51,7 +51,7 @@
           <label for="toggle" class="toggle-label">&#9776;</label>
           <div class="sidebar">
               <label for="toggle" class="close-btn">&times;</label>
-              <img class="logogo"src="../LONEL_NEW/image/LOGO.png" href="#" alt="logo">
+              <img class="logogo"src="image/LOGO.png" href="#" alt="logo">
                 <ul class="main-list">
                   <li><a href="index.html">首頁</a></li>
                   <li><a href="about.html">民生食品</a></li>
@@ -86,12 +86,12 @@
     <div class="ant">
       <div class="slider">
         <div class="main-slide">
-          <img src="../LONEL_NEW/image/PRODUCT_08.jpg" alt="Product 1" class="active">
+          <img src="image/PRODUCT_08.jpg" alt="Product 1" class="active">
         </div>
         <div class="thumbnails">
-          <img src="../LONEL_NEW/image/PRODUCT_08.jpg" alt="Thumbnail 1" class="thumbnail active">
-          <img src="../LONEL_NEW/image/PRODUCT_07.jpg" alt="Thumbnail 2" class="thumbnail">
-          <!-- <img src="../LONEL_NEW/image/PRODUCT_07.jpg" alt="Thumbnail 3" class="thumbnail"> -->
+          <img src="image/PRODUCT_08.jpg" alt="Thumbnail 1" class="thumbnail active">
+          <img src="image/PRODUCT_07.jpg" alt="Thumbnail 2" class="thumbnail">
+          <!-- <img src="image/PRODUCT_07.jpg" alt="Thumbnail 3" class="thumbnail"> -->
           <!-- 添加更多縮略圖 -->
         </div>
       </div>
@@ -192,7 +192,7 @@
     <!--FOOTER-->
 
     <footer class="footer">
-      <img src="../LONEL_NEW/image/LOGO_whit.png" alt="公司Logo">
+      <img src="image/LOGO_whit.png" alt="公司Logo">
       <p>民生食品工業股份有限公司 Min Sheng Foods Industry Inc.</p>
       <p>統一編號 : 60456518 彰化縣北斗鎮中山路二段519巷20號</p>
       <p>Tel : 04-8870991  Fax : 04-8887505  Copyright © 樂乃農場 2023</p>
@@ -251,13 +251,13 @@ mainSlide.src = this.src;
 
 //導覽列
 
-        // 获取所有主列表项
+        // 列表
         const mainItems = document.querySelectorAll('.main-list li');
 
-        // 为每个主列表项添加点击事件监听器
+        // 監聽
         mainItems.forEach(item => {
             item.addEventListener('click', () => {
-                // 切换子项的显示状态
+                // 切換
                 const subList = item.querySelector('.sub-list');
                 subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
             });
